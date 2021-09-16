@@ -5,17 +5,18 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		String claveIngresada;
 		int Z = 0;
-		int N = 123;
+
 		int q = 1000;
-
 		Scanner sc = new Scanner(System.in);
-
+		
 		System.out.println("ingrese clave");
-		N = sc.nextInt();
+		claveIngresada = sc.nextLine();
+
 		do {
 
-			if (N == 123) {
+			if (claveIngresada.equals("85DB")) {
 				System.out.println(" 1) Realizar transferencia");
 				System.out.println(" 2) Consultar transacciones");
 				System.out.println(" 3) Salir");
@@ -37,7 +38,7 @@ public class Main {
 
 			} else {
 				System.out.println("ingrese clave");
-				N = sc.nextInt();
+				claveIngresada = sc.nextLine();
 			}
 
 		} while (Z != 3);
